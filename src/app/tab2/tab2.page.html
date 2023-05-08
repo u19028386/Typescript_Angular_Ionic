@@ -1,0 +1,41 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-searchbar placeholder="Type ..." [(ngModel)]="searchName"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngFor="let f of food | filter:searchName">
+    <ion-card style="height:300px; width:100%;" (click)="addCart(f)"> 
+      <ion-grid>
+        <ion-row>
+    
+          <ion-col>
+            <img src={{f.rimage}} style="width:230px;height:230px">
+          </ion-col>
+          
+          <ion-col>
+            <ion-card-content>
+              <ion-label>{{f.rname}}</ion-label>
+              <ion-item-divider></ion-item-divider>
+    
+              <ion-label>{{f.rtype}}</ion-label>
+              <ion-item-divider></ion-item-divider>
+    
+              <ion-label>
+                {{f.rratings}} <ion-icon aria-hidden="true" name="star"></ion-icon> 5 mins. R{{f.rprice}} for one
+              </ion-label> 
+              
+              <ion-item-divider></ion-item-divider>
+    
+              <ion-label style="color:red">{{f.rdistance}}</ion-label>
+    
+            </ion-card-content>
+          </ion-col> 
+    
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </ion-item>
+</ion-content>

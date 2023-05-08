@@ -1,0 +1,35 @@
+[{
+            "id": 1,
+          "name": "Burger Queen",
+          "dType": "Burgers",
+          "rRatings": 5,
+          "rDistance": "2 kms away",
+          "rImage": "assets/burger1.jpg",
+          
+        },
+        {
+            "id": 2,
+            "name": "Pizza Queen",
+            "dType": "Pizzas",
+            "rRatings": 4.5,
+            "rDistance": "1.5 kms away",
+            "rImage": "assets/pizza2.jpg",
+        },
+        {
+          "id": 3,
+          "name": "Briyani Queen",
+          "dType": "Briyani",
+          "rRatings": 3.9,
+          "rDistance": "2 kms away",
+          "rImage": "assets/briyani3.jpg",
+        },
+        {
+          "id": 4,
+          "name": "Mince Queen",
+          "dType": "Minces",
+          "rRatings": 4.5,
+          "rDistance": "3 kms away",
+          "rImage": "assets/mince4.jpg",
+        },
+        
+        ]  

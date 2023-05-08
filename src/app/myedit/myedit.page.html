@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title color="dark">
+        <span><b>Edit</b></span>
+       
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-label>Name </ion-label>
+    <ion-input type="text" [(ngModel)]="mProfile.mfullname"></ion-input>
+    <ion-item-divider></ion-item-divider>
+
+    <ion-label>Number </ion-label>
+    <ion-input type="text" [(ngModel)]="mProfile.mnumber"></ion-input>
+    <ion-item-divider></ion-item-divider>
+
+    <ion-label>Email </ion-label>
+    <ion-input type="text" [(ngModel)]="mProfile.memail"></ion-input>
+    <ion-item-divider></ion-item-divider>
+    <ion-button (click)="close()">Save</ion-button>
+  </ion-content>
